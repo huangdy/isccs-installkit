@@ -1,0 +1,34 @@
+
+mkdir Downloads
+
+sudo yum install wget -y
+
+sudo yum install perl -y
+
+install the Oracle JDK:
+	website: https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora
+	cd ~/Downloads; wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.rpm"; sudo yum install jdk-8u101-linux-x64.rpm -y
+
+install node.js:
+	- sudo yum install -y gcc-c++ make
+	- sudo curl -sL https://rpm.nodesource.com/setup_6.x | sudo -E bash - 
+	- sudo yum install -y nodejs
+
+install XRDP:
+	website: http://www.itzgeek.com/how-tos/linux/centos-how-tos/install-xrdp-on-centos-7-rhel-7.html
+	Website: http://devopscube.com/how-to-setup-gui-for-amazon-ec2-rhel-7-instance/
+	1) install GNOME:
+		sudo yum groupinstall "GNOME Desktop" "Graphical Administration Tools"
+
+install openDJ:
+	
+
+install MySQL-5.7: (http://www.if-not-true-then-false.com/2010/install-mysql-on-fedora-centos-red-hat-rhel/)
+	1) sudo yum localinstall https://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm
+	2) sudo yum install mysql-community-server
+
+install node.js: (https://www.metachris.com/2015/10/how-to-install-nodejs-5-on-centos-and-ubuntu/)
+	sudo  rpm -Uvh https://rpm.nodesource.com/pub_5.x/el/7/x86_64/nodesource-release-el7-1.noarch.rpm; sudo yum install nodejs
+
+* this link shows how to install MySQL with certain version, such as 5.7.11
+https://community.hortonworks.com/articles/48763/how-to-install-a-specific-version-of-mysql.html
