@@ -9,6 +9,6 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-if [ -f ~/.bash_aliasess ]; then
+if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
